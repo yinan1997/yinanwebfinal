@@ -1,0 +1,265 @@
+body {
+ 
+  overflow-x: hidden;
+  background-color: #1d1d1f;
+  color: rgb(235, 204, 119);
+}
+
+.Chtitle {  font-family: 'Liu Jian Mao Cao', cursive;
+  font-size: 100px;
+  font-weight: 200;
+  color:  rgb(235, 204, 119)
+}
+
+.Ch {  font-family: 'Liu Jian Mao Cao', cursive;
+  font-size: 50px;
+  font-weight: 200;
+  color:  rgb(235, 204, 119)
+}
+
+.Entitle{
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+  font-weight: 200;
+  color:  rgb(235, 204, 119)
+}
+
+.En{
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  font-weight: 200;
+  color:  rgb(235, 204, 119)
+}
+a {
+  transition: all 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.5
+;
+}
+
+.tm-primary-color {
+  color: #61AEAE;
+}
+
+.tm-secondary-color {
+  color: #0099CC;
+}
+
+.page-body{display: flex;justify-content:center;}
+
+.tm-page-container {
+
+  max-width: 100%;
+  width: 100%;  
+}
+
+.tm-section {
+  margin-bottom: 155px;
+  position: relative;
+}
+
+.p1 {
+	display:flex;
+	align-items:center; 
+	justify-content:center;
+  background: #919191;
+ 
+}
+
+
+.tm-content {  
+  padding: 55px;
+}
+
+.tm-header {
+  padding: 65px 15px;
+}
+
+.tm-title {
+  font-size: 3rem;
+  color: #626364;
+}
+
+
+
+.tm-img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;  
+}
+
+.titleimg{widows: 500px;;
+  height:500px;}
+
+  .img{width: 100%;;
+    height:auto;}
+
+
+
+
+@media (max-width: 945px) {
+  .tm-nav {
+    position: static;
+  }
+
+  .tm-page-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+
+
+
+.sky {background-color: #1d1d1f;
+height: 1000px;}
+
+.star {
+  background: #919191;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.glow {
+  background: white;
+  animation: glitter 10s linear 0s infinite normal;
+     -webkit-animation: glitter 10s linear 0s infinite normal;
+    -moz-animation: glitter 10s linear 0s infinite normal;
+    -ms-animation: glitter 10s linear 0s infinite normal;
+    -o-animation: glitter 10s linear 0s infinite normal;
+}
+
+.one {
+  top: 20%;
+  left: 30%;
+  animation-delay: -2s;
+}
+
+.two {
+  top: 19%;
+  left: 38%;
+  animation-delay: -1.7142857143s;
+}
+
+.three {
+  top: 15%;
+  left: 46%;
+  animation-delay: -1.4285714286s;
+}
+
+.four {
+  top: 9%;
+  left: 54%;
+  animation-delay: -1.4285714286s;
+}
+
+.five {
+  top: 12%;
+  left: 66%;
+  animation-delay: -0.8571428571s;
+}
+
+.six {
+  top: 8%;
+  left: 64%;
+  animation-delay: -0.5714285714s;
+}
+
+.seven {
+  top: 10%;
+  left: 56%;
+  animation-delay: -0.2857142857s;
+}
+
+.moon {
+  position: absolute;
+  top: 5%;
+  left: 80%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #ddd;
+  box-shadow: inset 10px -10px 0 0 #b9b9b9, 0px 0px 40px 20px rgb(95, 107, 145);
+}
+
+
+
+
+
+@keyframes glitter {
+    0% {
+        transform: scale(1.0);
+        opacity: 1;
+        box-shadow: 0px 0px 10px 5px rgb(174, 179, 231);
+    }
+    25% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.0);
+        opacity: 1;
+        box-shadow: 0px 0px 10px 5px rgb(195, 198, 231);
+    }
+    75% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1.0);
+        opacity: 1;
+        box-shadow: 0px 0px 10px 5px rgb(194, 198, 240);
+    }
+}
+
+
+#mydiv {
+  position: absolute;
+  z-index: 9;
+
+  text-align: center;
+}
+
+#mydivheader {
+  padding: 100px;
+  cursor: move;
+  z-index: 10;
+
+
+}
+
+.dragimg{
+  width: 150px;
+  height:auto;
+}
+
+#drag:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
